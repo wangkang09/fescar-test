@@ -1,6 +1,8 @@
 package com.wangkang.entity;
 
-public class Storage {
+import java.io.Serializable;
+
+public class Storage implements Serializable{
     private Integer id;
 
     private String commodityCode;

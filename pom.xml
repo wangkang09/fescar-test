@@ -95,6 +95,11 @@
 			<artifactId>fescar-dubbo</artifactId>
 			<version>${fescar.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.alibaba.fescar</groupId>
+			<artifactId>fescar-server</artifactId>
+			<version>${fescar.version}</version>
+		</dependency>
 
 		<!--netty-->
 		<dependency>

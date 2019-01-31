@@ -1,6 +1,8 @@
 package com.wangkang.entity;
 
-public class Account {
+import java.io.Serializable;
+
+public class Account implements Serializable{
     private Integer id;
 
     private String userId;
