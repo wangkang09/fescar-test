@@ -1,0 +1,1 @@
+INSERT INTO `storage_tbl` VALUES (1, 'pants', 100000);
