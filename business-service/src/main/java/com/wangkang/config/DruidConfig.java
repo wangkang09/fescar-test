@@ -23,17 +23,19 @@ public class DruidConfig {
 //    @Value("${spring.datasource.druid.password}")
 //    private String druidPassword;
 
-    @Bean(destroyMethod = "close", initMethod = "init")
-    @ConfigurationProperties(prefix = "spring.datasource")
-    public DruidDataSource druidDataSource() {
-        DruidDataSource druidDataSource = new DruidDataSource();
-        return druidDataSource;
-    }
+//    @Bean(destroyMethod = "close", initMethod = "init")
+//    @ConfigurationProperties(prefix = "spring.datasource")
+//    public DruidDataSource druidDataSource() {
+//        DruidDataSource druidDataSource = new DruidDataSource();
+//        return druidDataSource;
+//    }
 
     @ConfigurationProperties(prefix = "spring.datasource")
     @Primary
     @Bean("dataSource")
-    public DataSource dataSource(DruidDataSource druidDataSource) {
+    public DataSource dataSource() {
+        DruidDataSource druidDataSource = new DruidDataSource();
+
         DataSourceProxy dataSourceProxy = new DataSourceProxy(druidDataSource);
         return dataSourceProxy;
     }
