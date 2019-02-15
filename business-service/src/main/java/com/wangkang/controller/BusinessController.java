@@ -26,9 +26,9 @@ public class BusinessController implements BusinessApi {
     @GetMapping("/purchase")
     public void purchase(String userId, String commodityCode, int orderCount) throws Exception {
 
-        System.out.println(userId + " 开始购买 " +orderCount + " 个" + commodityCode +" 商品！");
+        System.out.println(userId + " 开始购买 " + orderCount + " 个" + commodityCode + " 商品！");
 
-        businessService.purchase(userId,commodityCode,orderCount);
+        businessService.purchase(userId, commodityCode, orderCount);
 
     }
 }

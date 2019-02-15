@@ -11,7 +11,7 @@ public interface AccountApi {
     /**
      * debit balance of user's account
      */
-    void debit(String userId, int money);
+    void debit(String userId, int money) throws Exception;
 
     String helloOrder();
 

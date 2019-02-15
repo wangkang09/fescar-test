@@ -2,7 +2,7 @@ package com.wangkang.entity;
 
 import java.io.Serializable;
 
-public class Storage implements Serializable{
+public class Storage implements Serializable {
     private Integer id;
 
     private String commodityCode;

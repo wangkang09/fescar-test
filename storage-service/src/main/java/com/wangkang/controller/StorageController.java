@@ -25,8 +25,8 @@ public class StorageController implements StorageApi {
      */
     public void deduct(String commodityCode, int count) {
 
-        storageMapper.updateDeduct(commodityCode,count);
-        System.out.println("库存中心减少 " + commodityCode + " " +count + "个库存！");
+        storageMapper.updateDeduct(commodityCode, count);
+        System.out.println("库存中心减少 " + commodityCode + " " + count + "个库存！");
 
     }
 

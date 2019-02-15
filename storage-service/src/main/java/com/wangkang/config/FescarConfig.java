@@ -17,7 +17,6 @@ public class FescarConfig {
     private String applicationId;
 
     /**
-     *
      * @return
      */
     @Bean
